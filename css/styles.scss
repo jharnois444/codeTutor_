@@ -1,0 +1,210 @@
+@import "variables";
+@import "mixins";
+
+
+.row{
+  font-family: 'Lato', sans-serif;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: $blueGrey;
+  padding-bottom: 0;  
+}
+
+// Navigation Bar
+
+// .topnav{
+//   padding: 20px;
+//   background-color: $navyBlue;
+// }
+
+.navbar{
+    width: 100%;
+    margin:0;
+    background: $navyBlue;
+    padding: 5px;
+    border-radius: 0px;
+    // overflow: hidden;
+    
+}
+.navbar a {
+    font-size: 12px;
+    color: $blueGrey;
+    // text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    padding:  10px 14px 10px;
+    position: relative;
+    text-align: center;
+    float: right;
+    // display: block;
+    &:hover {
+      background: lighten( $navyBlue, 7);
+    }
+}
+#logo{
+font-size: 32px;
+font-family: "Futura";
+color:white;
+line-height: 1.016;
+position: absolute;
+left: 20px;
+top: 10px;
+}
+
+// HERO
+
+#hero-image {
+  padding: 40px;
+  height: 50vh;
+  width:100%;
+  background-image: url("Banner1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ display: flex; 
+ justify-content: center;
+}
+
+#about-image {
+  padding: 40px;
+  height: 50vh;
+  width:100%;
+  background-image: url("loginphoto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ display: flex; 
+ justify-content: center;
+}
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+.container{
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper{
+  background-color: $navyBlue;
+  height: 50vh;
+
+}
+.wrapper1{
+  background-color: $blueGrey;
+  height: 50vh;
+  padding: 40px;
+}
+
+.wrapper-container{
+  background-color: $navyBlue;
+  width: 50%;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  margin-left: 25%;
+ padding: 40px;
+  text-align: center;
+}
+.box{
+  margin-top: 25%;
+  margin-bottom: 25%;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+h1{
+  color: white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: $bannerHeading; 
+}
+.title{
+  text-align: center;
+  .button1{
+    @include button;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+      &:hover {
+        background: lighten( $cyanBlue, 7);
+      }
+      
+  }
+}
+
+h2{
+  color: white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: $bodyFont; 
+   
+}
+
+h3{
+  font-size: 32px;
+}
+h4{
+  font-size: 16px;
+  color: white;
+}
+
+.button2{
+  @include button;
+  border-radius: 4px;
+    &:hover {
+      background: lighten( $cyanBlue, 7);
+    }
+    
+}
+#services{
+    color:$navyBlue;
+    font-size: 32px;
+    text-align: center;
+}
+.section{
+  background-color: $blueGrey;
+  height: 50vh;
+}
+
+//Footer
+
+footer {
+  width:100%;
+  background-color: $darkGrey;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  
+ 
+}
+ 
+
+ .button6 {
+ @include button;
+ background-color: $darkGrey;
+ font-size: 14px;
+  border: none;
+  &:hover {
+    background: lighten( $darkGrey, 7);
+  }
+ }
+
+ #submitBtn{
+   @include button;
+   border-radius: 4px;
+   margin: 20px;
+ }
+
+ #logSubmit{
+  @include button;
+  border-radius: 4px;
+  margin: 20px;
+ 
+ }
+ 
+.table  {
+   font-size: 16px;
+   color: $navyBlue;
+   
+ }

@@ -1,0 +1,190 @@
+.row {
+  font-family: 'Lato', sans-serif; }
+
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #AAABB8;
+  padding-bottom: 0; }
+
+.navbar {
+  width: 100%;
+  margin: 0;
+  background: #25274D;
+  padding: 5px;
+  border-radius: 0px; }
+
+.navbar a {
+  font-size: 12px;
+  color: #AAABB8;
+  font-family: 'Lato', sans-serif;
+  padding: 10px 14px 10px;
+  position: relative;
+  text-align: center;
+  float: right; }
+  .navbar a:hover {
+    background: #313365; }
+
+#logo {
+  font-size: 32px;
+  font-family: "Futura";
+  color: white;
+  line-height: 1.016;
+  position: absolute;
+  left: 20px;
+  top: 10px; }
+
+#hero-image {
+  padding: 40px;
+  height: 50vh;
+  width: 100%;
+  background-image: url("Banner1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+#about-image {
+  padding: 40px;
+  height: 50vh;
+  width: 100%;
+  background-image: url("loginphoto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.container-fluid {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  height: 100%;
+  width: 100%; }
+
+.wrapper {
+  background-color: #25274D;
+  height: 50vh; }
+
+.wrapper1 {
+  background-color: #AAABB8;
+  height: 50vh;
+  padding: 40px; }
+
+.wrapper-container {
+  background-color: #25274D;
+  width: 50%;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  margin-left: 25%;
+  padding: 40px;
+  text-align: center; }
+
+.box {
+  margin-top: 25%;
+  margin-bottom: 25%;
+  margin-left: 35%;
+  margin-right: 35%; }
+
+h1 {
+  color: white;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 48px; }
+
+.title {
+  text-align: center; }
+  .title .button1 {
+    font-family: 'Lato', sans-serif;
+    background-color: #2E9CCA;
+    color: white;
+    font-size: 16px;
+    padding: 12px 12px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto; }
+    .title .button1:hover {
+      background: #47abd5; }
+
+h2 {
+  color: white;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px; }
+
+h3 {
+  font-size: 32px; }
+
+h4 {
+  font-size: 16px;
+  color: white; }
+
+.button2 {
+  font-family: 'Lato', sans-serif;
+  background-color: #2E9CCA;
+  color: white;
+  font-size: 16px;
+  padding: 12px 12px;
+  border-radius: 4px; }
+  .button2:hover {
+    background: #47abd5; }
+
+#services {
+  color: #25274D;
+  font-size: 32px;
+  text-align: center; }
+
+.section {
+  background-color: #AAABB8;
+  height: 50vh; }
+
+footer {
+  width: 100%;
+  background-color: #2a2a2a;
+  padding: 10px;
+  text-align: center;
+  color: white; }
+
+.button6 {
+  font-family: 'Lato', sans-serif;
+  background-color: #2E9CCA;
+  color: white;
+  font-size: 16px;
+  padding: 12px 12px;
+  background-color: #2a2a2a;
+  font-size: 14px;
+  border: none; }
+  .button6:hover {
+    background: #3c3c3c; }
+
+#submitBtn {
+  font-family: 'Lato', sans-serif;
+  background-color: #2E9CCA;
+  color: white;
+  font-size: 16px;
+  padding: 12px 12px;
+  border-radius: 4px;
+  margin: 20px; }
+
+#logSubmit {
+  font-family: 'Lato', sans-serif;
+  background-color: #2E9CCA;
+  color: white;
+  font-size: 16px;
+  padding: 12px 12px;
+  border-radius: 4px;
+  margin: 20px; }
+
+.table {
+  font-size: 16px;
+  color: #25274D; }

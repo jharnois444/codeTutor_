@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <form id="job-search-form">
+        <button type="submit" id="submit-query" value="Add" class="btn btn-default">Search Web Developer Jobs by Keyword</button>
+        <input type="text" value="javascript" id="user-input">
+    </form>
+
+    <div id="job-display"></div>
+
+
+
+    <!-- Place the JavaScript Somewhere Else -->
+    <script>
+
+        // Creating an empty array to hold user submissions //
+        var whatKeyword = [];
+
+        $(document).ready(function () {
+
+
+
+            // The function for a user to add their own button //
+            $("#submit-query").click(function (event) {
+                event.preventDefault();
+                // Trims away all of the excess space in the user's answer //
+                var job_selection = $("#user-input").val().trim();
+                // Clears the text input box //
+                $("#user-input").val("");
+                // Adds the users input into the array //
+                whatKeyword.push(job_selection);
+
+                // Creates a function that displays the results of the API from the user input //
+                // What is the keywords function, which may be what we substitute for the User Interaction //
+                function displayJobInformation() {
+                    $("#job-display").empty();
+                    var jobQuery = $(this).attr("data-name");
+                    var queryURL = "https://api.adzuna.com:443/v1/api/jobs/us/search/1?app_id=36a761c3&app_key=10a508db4a75db9ebbc93e8b50051c51&results_per_page=10&what=" + whatKeyword + "&title_only=Web%20Developer&location0=us&max_days_old=30&sort_direction=up&sort_by=salary&salary_min=1&salary_max=100000000&permanent=1";
+
+
+
+                    // Run AJAX Query //
+                    $.ajax({
+                        url: queryURL,
+                        method: "GET"
+                    }).then(function (response) {
+                        displayJobInformation();
+
+                    })
+
+                }
+
+
+            })
+
+
+        })
+
+
+
+    </script>
+
+
+</body>
+
+</html>

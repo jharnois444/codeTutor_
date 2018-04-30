@@ -1,0 +1,8 @@
+//Mixins
+@mixin button{
+    font-family: 'Lato', sans-serif;
+    background-color: $cyanBlue;
+    color: white;
+    font-size: $buttonsFont;
+    padding: 12px 12px;
+}
